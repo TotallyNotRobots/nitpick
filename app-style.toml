@@ -1,3 +1,9 @@
+[nitpick]
+minimum_version = "0.10.0"
+
+[nitpick.styles]
+include = ["editorconfig.toml", "commitizen.toml", "pre-commit.toml"]
+
 ["pyproject.toml".tool.isort]
 line_length = 80
 profile = "black"
@@ -7,24 +13,14 @@ float_to_top = true
 line-length = 80
 target-version = ['py38']
 
-[".editorconfig"]
-# top-most EditorConfig file
-root = true
+["pyproject.toml".tool.mypy]
+ignore_missing_imports = true
+show_error_codes = true
+warn_unused_ignores = true
+warn_redundant_casts = true
 
-[".editorconfig"."*"]
-# Unix-style newlines with a newline ending every file
-charset = "utf-8"
-end_of_line = "lf"
-indent_size = 4
-indent_style = "space"
-insert_final_newline = true
-trim_trailing_whitespace = true
-
-[".editorconfig"."*.{bat,cmd,ps1}"]
-end_of_line = "crlf"
-
-[".editorconfig"."*.{js,json,json5,yml,yaml,md,rb}"]
-indent_size = 2
-
-[".editorconfig".Makefile]
-indent_style = "tab"
+["pyproject.toml".tool.flynt]
+transform-concats = true
+transform-joins = true
+line-length = 120
+aggressive = true

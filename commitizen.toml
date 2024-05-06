@@ -1,0 +1,13 @@
+["pyproject.toml".tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+version_scheme = "semver"
+version_provider = "scm"
+update_changelog_on_bump = true
+major_version_zero = true
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/commitizen-tools/commitizen"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "commitizen"
