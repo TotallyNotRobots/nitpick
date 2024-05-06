@@ -6,3 +6,25 @@ float_to_top = true
 ["pyproject.toml".tool.black]
 line-length = 80
 target-version = ['py38']
+
+[".editorconfig"]
+# top-most EditorConfig file
+root = true
+
+[".editorconfig"."*"]
+# Unix-style newlines with a newline ending every file
+charset = "utf-8"
+end_of_line = "lf"
+indent_size = 4
+indent_style = "space"
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[".editorconfig"."*.{bat,cmd,ps1}"]
+end_of_line = "crlf"
+
+[".editorconfig"."*.{js,json,json5,yml,yaml,md,rb}"]
+indent_size = 2
+
+[".editorconfig".Makefile]
+indent_style = "tab"
