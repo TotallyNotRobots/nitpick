@@ -28,3 +28,9 @@ repo = "https://github.com/andreoliwa/nitpick"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "nitpick"
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/ikamensh/flynt"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "flynt"
