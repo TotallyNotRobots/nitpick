@@ -2,7 +2,12 @@
 minimum_version = "0.10.0"
 
 [nitpick.styles]
-include = ["editorconfig.toml", "commitizen.toml", "pre-commit.toml"]
+include = [
+    "editorconfig.toml",
+    "commitizen.toml",
+    "pre-commit.toml",
+    "coverage.toml",
+]
 
 ["pyproject.toml".tool.isort]
 line_length = 80
