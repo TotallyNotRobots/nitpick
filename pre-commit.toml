@@ -7,6 +7,7 @@ repo = "https://github.com/pre-commit/pre-commit-hooks"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "end-of-file-fixer"
+args = ["--markdown-linebreak-ext=md,markdown"]
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "trailing-whitespace"
@@ -34,3 +35,10 @@ repo = "https://github.com/ikamensh/flynt"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "flynt"
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/codespell-project/codespell"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+additional_dependencies = ["tomli ; python_version < '3.11'"]
+id = "codespell"
