@@ -1,0 +1,44 @@
+[".pre-commit-config.yaml"]
+minimum_pre_commit_version = "2.18.0"
+default_install_hook_types = ["pre-commit", "pre-push", "commit-msg"]
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/pre-commit/pre-commit-hooks"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "end-of-file-fixer"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "trailing-whitespace"
+args = ["--markdown-linebreak-ext=md,markdown"]
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/psf/black"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "black"
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/pycqa/isort"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "isort"
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/andreoliwa/nitpick"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "nitpick"
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/ikamensh/flynt"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "flynt"
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/codespell-project/codespell"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+additional_dependencies = ["tomli ; python_version < '3.11'"]
+id = "codespell"
