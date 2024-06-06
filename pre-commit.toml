@@ -39,6 +39,5 @@ id = "codespell"
 
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/asottile/pyupgrade"
-
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "pyupgrade"
