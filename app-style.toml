@@ -2,16 +2,17 @@
 minimum_version = "0.10.0"
 
 [nitpick.styles]
-include = ["editorconfig.toml", "commitizen.toml", "pre-commit.toml"]
+include = [
+    "black.toml",
+    "editorconfig.toml",
+    "commitizen.toml",
+    "pre-commit.toml",
+]
 
 ["pyproject.toml".tool.isort]
 line_length = 80
 profile = "black"
 float_to_top = true
-
-["pyproject.toml".tool.black]
-line-length = 80
-target-version = ['py38']
 
 ["pyproject.toml".tool.mypy]
 ignore_missing_imports = true

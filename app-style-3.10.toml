@@ -2,25 +2,4 @@
 minimum_version = "0.10.0"
 
 [nitpick.styles]
-include = ["editorconfig.toml", "commitizen.toml", "pre-commit-3.10.toml"]
-
-["pyproject.toml".tool.isort]
-line_length = 80
-profile = "black"
-float_to_top = true
-
-["pyproject.toml".tool.black]
-line-length = 80
-target-version = ['py310']
-
-["pyproject.toml".tool.mypy]
-ignore_missing_imports = true
-show_error_codes = true
-warn_unused_ignores = true
-warn_redundant_casts = true
-
-["pyproject.toml".tool.flynt]
-transform-concats = true
-transform-joins = true
-line-length = 120
-aggressive = true
+include = ["app-style.toml", "pre-commit-3.10.toml", "black-3.10.toml"]

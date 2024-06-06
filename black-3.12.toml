@@ -1,0 +1,8 @@
+[nitpick]
+minimum_version = "0.10.0"
+
+[nitpick.styles]
+include = ["black.toml"]
+
+["pyproject.toml".tool.black]
+target-version = ['py312']
