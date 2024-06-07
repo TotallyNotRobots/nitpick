@@ -36,8 +36,3 @@ repo = "https://github.com/codespell-project/codespell"
 [[".pre-commit-config.yaml".repos.hooks]]
 additional_dependencies = ["tomli ; python_version < '3.11'"]
 id = "codespell"
-
-[[".pre-commit-config.yaml".repos]]
-repo = "https://github.com/asottile/pyupgrade"
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "pyupgrade"
