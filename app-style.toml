@@ -4,10 +4,10 @@ minimum_version = "0.10.0"
 [nitpick.styles]
 include = [
     "black.toml",
-    "editorconfig.toml",
     "commitizen.toml",
     "pre-commit.toml",
     "autoflake.toml",
+    "common.toml",
 ]
 
 ["pyproject.toml".tool.isort]

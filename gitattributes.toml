@@ -1,0 +1,2 @@
+[".gitattributes".contains]
+line = "* text=auto eol=lf"

@@ -1,0 +1,5 @@
+[nitpick.styles]
+include = [
+    "gitattributes.toml",
+    "editorconfig.toml",
+]
