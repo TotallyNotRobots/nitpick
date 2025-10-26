@@ -1,0 +1,7 @@
+["pyproject.toml".tool.autoflake]
+remove-all-unused-imports = true
+in-place = true
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/PyCQA/autoflake"
+hooks = [{id = "autoflake"}]

@@ -7,6 +7,7 @@ include = [
     "editorconfig.toml",
     "commitizen.toml",
     "pre-commit.toml",
+    "autoflake.toml",
 ]
 
 ["pyproject.toml".tool.isort]
