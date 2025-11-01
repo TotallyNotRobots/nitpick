@@ -8,6 +8,7 @@ include = [
     "pre-commit.toml",
     "autoflake.toml",
     "common.toml",
+    "common-python.toml",
 ]
 
 ["pyproject.toml".tool.isort]

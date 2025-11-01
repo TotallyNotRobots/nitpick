@@ -1,0 +1,4 @@
+[nitpick.styles]
+include = [
+    "autowalrus.toml",
+]
