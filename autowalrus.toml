@@ -1,0 +1,7 @@
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/MarcoGorelli/auto-walrus"
+hooks = [
+    {id = "auto-walrus", additional_dependencies = [
+        "tomli ; python_version < '3.11'",
+    ]},
+]
