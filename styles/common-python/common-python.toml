@@ -26,8 +26,8 @@ line-length = 120
 aggressive = true
 
 ["pyproject.toml".tool.pytest.ini_options]
-minversion = "6.0"
-addopts = "--doctest-modules"
+minversion = "8.0"
+addopts = ["--doctest-modules"]
 filterwarnings = ["error"]
 
 ["pyproject.toml".tool.coverage.report]
