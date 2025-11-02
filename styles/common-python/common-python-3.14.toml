@@ -1,4 +1,4 @@
 [nitpick.styles]
 include = [
-    "/styles/mypy/mypy-3.14.toml",
+    "../mypy/mypy-3.14.toml",
 ]
