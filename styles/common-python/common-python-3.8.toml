@@ -6,3 +6,6 @@ include = [
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/asottile/pyupgrade"
 hooks = [{id = "pyupgrade", args = ["--py38-plus"]}]
+
+["pyproject.toml".project]
+requires-python = ">=3.8"
