@@ -2,3 +2,7 @@
 include = [
     "../mypy/mypy-3.9.toml",
 ]
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/asottile/pyupgrade"
+hooks = [{id = "pyupgrade", args = ["--py39-plus"]}]

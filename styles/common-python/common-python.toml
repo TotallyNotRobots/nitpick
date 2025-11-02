@@ -1,5 +1,44 @@
 [nitpick.styles]
 include = [
     "../../autowalrus.toml",
+    "../../black.toml",
+    "../../autoflake.toml",
     "../mypy/mypy.toml",
 ]
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/ikamensh/flynt"
+hooks = [{id = "flynt"}]
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/pycqa/isort"
+hooks = [{id = "isort"}]
+
+["pyproject.toml".tool.isort]
+line_length = 80
+profile = "black"
+float_to_top = true
+
+["pyproject.toml".tool.flynt]
+transform-concats = true
+transform-joins = true
+line-length = 120
+aggressive = true
+
+["pyproject.toml".tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--doctest-modules"
+filterwarnings = ["error"]
+
+["pyproject.toml".tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
+
+["pyproject.toml".tool.coverage.run]
+branch = true
+relative_files = true
