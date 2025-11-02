@@ -1,4 +1,5 @@
 [nitpick.styles]
 include = [
     "autowalrus.toml",
+    "styles/mypy/mypy.toml",
 ]

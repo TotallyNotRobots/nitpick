@@ -1,0 +1,6 @@
+["pyproject.toml".tool.mypy]
+ignore_missing_imports = true
+show_error_codes = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+

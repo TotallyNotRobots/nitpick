@@ -9,19 +9,13 @@ include = [
     "coverage.toml",
     "autoflake.toml",
     "common.toml",
-    "common-python.toml",
+    "styles/common-python/common-python.toml",
 ]
 
 ["pyproject.toml".tool.isort]
 line_length = 80
 profile = "black"
 float_to_top = true
-
-["pyproject.toml".tool.mypy]
-ignore_missing_imports = true
-show_error_codes = true
-warn_unused_ignores = true
-warn_redundant_casts = true
 
 ["pyproject.toml".tool.flynt]
 transform-concats = true

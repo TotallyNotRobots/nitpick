@@ -2,4 +2,9 @@
 minimum_version = "0.10.0"
 
 [nitpick.styles]
-include = ["lib-style.toml", "pre-commit-3.12.toml", "black-3.12.toml"]
+include = [
+    "lib-style.toml",
+    "pre-commit-3.12.toml",
+    "black-3.12.toml",
+    "styles/common-python/common-python-3.12.toml",
+]
