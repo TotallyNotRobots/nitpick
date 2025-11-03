@@ -22,8 +22,8 @@ id = "nitpick"
 repo = "https://github.com/codespell-project/codespell"
 
 [[".pre-commit-config.yaml".repos.hooks]]
-additional_dependencies = ["tomli ; python_version < '3.11'"]
 id = "codespell"
+additional_dependencies = ["tomli ; python_version < '3.11'"]
 
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/macisamuele/language-formatters-pre-commit-hooks"
