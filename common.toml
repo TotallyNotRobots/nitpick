@@ -1,7 +1,8 @@
 [nitpick.styles]
 include = [
-    "gitattributes.toml",
-    "editorconfig.toml",
-    "pre-commit.toml",
     "commitizen.toml",
+    "editorconfig.toml",
+    "gitattributes.toml",
+    "gitignore.toml",
+    "pre-commit.toml",
 ]
