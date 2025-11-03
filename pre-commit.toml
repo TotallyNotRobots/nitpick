@@ -28,7 +28,7 @@ id = "codespell"
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/macisamuele/language-formatters-pre-commit-hooks"
 hooks = [
-    { id = "pretty-format-toml", args = [
+    {id = "pretty-format-toml", args = [
         "--autofix",
         "--no-sort",
         "--trailing-commas",
@@ -36,5 +36,5 @@ hooks = [
         '4',
         "--inline-comment-spaces",
         '1',
-    ] },
+    ]},
 ]
