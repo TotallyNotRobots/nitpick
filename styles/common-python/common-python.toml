@@ -14,10 +14,6 @@ hooks = [{id = "flynt"}]
 repo = "https://github.com/pycqa/isort"
 hooks = [{id = "isort"}]
 
-[[".pre-commit-config.yaml".repos]]
-repo = "https://github.com/TotallyNotRobots/check-spdx-header"
-hooks = [{id = "fix-spdx-header"}]
-
 ["pyproject.toml".tool.isort]
 line_length = 80
 profile = "black"
