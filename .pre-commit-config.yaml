@@ -22,11 +22,11 @@ repos:
           - tomli ; python_version < '3.11'
         id: codespell
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: '9f3ec868c0429155a46b4819b625d47a8522a3d5'  # frozen: v4.10.0
+    rev: '2e4f4b26b5b0a0c0ebc660c1f78aca1e28d912bd'  # frozen: v4.11.1
     hooks:
       - id: commitizen
   - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-    rev: '19b28a9f0a0102b30776f054bea4176e7af50dbe'  # frozen: v2.15.0
+    rev: '4380fbb73a154b5f5624794c1c78d9719ccc860f'  # frozen: v2.16.0
     hooks:
       - id: pretty-format-toml
         args:
