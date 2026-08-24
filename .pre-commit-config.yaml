@@ -22,7 +22,7 @@ repos:
           - tomli ; python_version < '3.11'
         id: codespell
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: '1afca4a81ca3e578ba142fe15a0f8a1a94b894ad'  # frozen: v4.17.0
+    rev: '3d7386012109c403d56375314125c20e102e75c0'  # frozen: v4.18.0
     hooks:
       - id: commitizen
   - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
