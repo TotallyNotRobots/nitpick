@@ -1,18 +1,17 @@
 [nitpick.styles]
 include = [
     "../../autowalrus.toml",
-    "../../black.toml",
     "../../autoflake.toml",
     "../mypy/mypy.toml",
 ]
 
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/ikamensh/flynt"
-hooks = [{id = "flynt"}]
+hooks = [{ id = "flynt" }]
 
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/pycqa/isort"
-hooks = [{id = "isort"}]
+hooks = [{ id = "isort" }]
 
 ["pyproject.toml".tool.isort]
 line_length = 80
