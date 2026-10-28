@@ -1,0 +1,11 @@
+[nitpick.styles]
+include = [
+    "../mypy/mypy-3.15.toml",
+]
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/asottile/pyupgrade"
+hooks = [{ id = "pyupgrade", args = ["--py315-plus"] }]
+
+["pyproject.toml".project]
+requires-python = ">=3.15"

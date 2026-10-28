@@ -1,0 +1,8 @@
+[nitpick]
+minimum_version = "0.10.0"
+
+[nitpick.styles]
+include = [
+    "lib-style.toml",
+    "styles/common-python/common-python-3.14.toml",
+]
