@@ -10,13 +10,19 @@ repo = "https://github.com/ikamensh/flynt"
 hooks = [{ id = "flynt" }]
 
 [[".pre-commit-config.yaml".repos]]
-repo = "https://github.com/pycqa/isort"
-hooks = [{ id = "isort" }]
+repo = "https://github.com/astral-sh/ruff-pre-commit"
+hooks = [{ id = "ruff-check", args = ["--fix"] }, { id = "ruff-format" }]
 
-["pyproject.toml".tool.isort]
-line_length = 80
-profile = "black"
-float_to_top = true
+["pyproject.toml".tool.ruff]
+line-length = 80
+
+["pyproject.toml".tool.ruff.format]
+docstring-code-format = true
+line-ending = "lf"
+skip-magic-trailing-comma = true
+
+["pyproject.toml".tool.ruff.lint.isort]
+split-on-trailing-comma = false
 
 ["pyproject.toml".tool.flynt]
 transform-concats = true
