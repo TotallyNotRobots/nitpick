@@ -1,2 +1,2 @@
-["pyproject.toml".tool.mypy]
+["pyproject.toml".tool.basedpyright]
 pythonVersion = "3.9"
