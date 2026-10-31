@@ -6,7 +6,11 @@ reportImportCycles = "none"
 
 # VSCode
 [".vscode/extensions.json".contains_json]
-recommendations = ["detachhead.basedpyright"]
+recommendations = """
+["detachhead.basedpyright"]
+"""
 
 [".devcontainer/devcontainer.json".contains_json]
-customizations.vscode.extensions = ["detachhead.basedpyright"]
+customizations.vscode.extensions = """
+["detachhead.basedpyright"]
+"""
