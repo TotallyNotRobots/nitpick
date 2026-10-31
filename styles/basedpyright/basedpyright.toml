@@ -14,7 +14,9 @@ recommendations = """
 extensions = """
 {
     "customizations": {
-        "vscode": ["detachhead.basedpyright"]
+        "vscode": {
+            "extensions": ["detachhead.basedpyright"]
+        }
     }
 }
 """
