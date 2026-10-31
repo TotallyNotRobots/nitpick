@@ -1,0 +1,12 @@
+["pyproject.toml".tool.basedpyright]
+analyzeUnannotatedFunctions = true
+reportUnusedCallResult = "none"
+reportImplicitStringConcatenation = "none"
+reportImportCycles = "none"
+
+# VSCode
+[".vscode/extensions.json"]
+recommendations = ["detachhead.basedpyright"]
+
+[".devcontainer/devcontainer.json".customizations.vscode]
+extensions = ["detachhead.basedpyright"]

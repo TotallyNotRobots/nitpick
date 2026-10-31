@@ -2,7 +2,7 @@
 include = [
     "../../autowalrus.toml",
     "../../autoflake.toml",
-    "../mypy/mypy.toml",
+    "../basedpyright/basedpyright.toml",
 ]
 
 [[".pre-commit-config.yaml".repos]]

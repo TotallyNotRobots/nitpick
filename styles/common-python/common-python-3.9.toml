@@ -1,6 +1,6 @@
 [nitpick.styles]
 include = [
-    "../mypy/mypy-3.9.toml",
+    "../basedpyright/basedpyright-3.9.toml",
 ]
 
 [[".pre-commit-config.yaml".repos]]

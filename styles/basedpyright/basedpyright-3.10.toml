@@ -1,2 +1,2 @@
 ["pyproject.toml".tool.mypy]
-python_version = "3.11"
+pythonVersion = "3.10"
