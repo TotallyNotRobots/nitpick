@@ -10,7 +10,11 @@ recommendations = """
 ["detachhead.basedpyright"]
 """
 
-[".devcontainer/devcontainer.json".customizations.vscode.contains_json]
+[".devcontainer/devcontainer.json".contains_json]
 extensions = """
-["detachhead.basedpyright"]
+{
+    "customizations": {
+        "vscode": ["detachhead.basedpyright"]
+    }
+}
 """
