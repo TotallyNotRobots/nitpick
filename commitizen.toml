@@ -8,4 +8,4 @@ annotated_tag = true
 
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/commitizen-tools/commitizen"
-hooks = [{id = "commitizen"}]
+hooks = [{ id = "commitizen" }]
