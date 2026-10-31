@@ -11,12 +11,10 @@ recommendations = """
 """
 
 [".devcontainer/devcontainer.json".contains_json]
-extensions = """
+customizations = """
 {
-    "customizations": {
-        "vscode": {
-            "extensions": ["detachhead.basedpyright"]
-        }
+    "vscode": {
+        "extensions": ["detachhead.basedpyright"]
     }
 }
 """
