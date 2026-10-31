@@ -5,8 +5,8 @@ reportImplicitStringConcatenation = "none"
 reportImportCycles = "none"
 
 # VSCode
-[".vscode/extensions.json"]
+[".vscode/extensions.json".contains_json]
 recommendations = ["detachhead.basedpyright"]
 
-[".devcontainer/devcontainer.json".customizations.vscode]
-extensions = ["detachhead.basedpyright"]
+[".devcontainer/devcontainer.json".contains_json]
+customizations.vscode.extensions = ["detachhead.basedpyright"]
