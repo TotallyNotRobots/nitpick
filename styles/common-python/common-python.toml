@@ -11,7 +11,7 @@ hooks = [{ id = "flynt" }]
 
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/astral-sh/ruff-pre-commit"
-hooks = [{ id = "ruff-check", args = ["--fix"] }, { id = "ruff-format" }]
+hooks = [{ id = "ruff-check", args = ["--fix"], types_or = ["python", "pyi", "pyproject"] }, { id = "ruff-format" }]
 
 ["pyproject.toml".tool.ruff]
 line-length = 80
