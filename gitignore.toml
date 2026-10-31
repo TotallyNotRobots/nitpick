@@ -1,2 +1,5 @@
 [[".gitignore".contains]]
 line = ".cache/nitpick/"
+
+[[".gitignore".contains]]
+line = "junit.xml"
