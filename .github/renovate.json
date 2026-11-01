@@ -9,7 +9,7 @@
       "managerFilePatterns": ["**/*.toml"],
       "description": "Pinned python packages in style data",
       "matchStrings": [
-        "(?P<depName>[\\d\\w\\-\\._\\[\\]]+)==(?<currentValue>[\\d\\w\\-\\.]+).* # renovate: datasource=pypi"
+        "(?<depName>[\\d\\w\\-\\._\\[\\]]+)==(?<currentValue>[\\d\\w\\-\\.]+).* # renovate: datasource=(?<datasource>pypi)"
       ]
     }
   ]
