@@ -1,0 +1,7 @@
+[".github/renovate.json".contains_json]
+"$schema" = '"https://docs.renovatebot.com/renovate-schema.json"'
+extends = """
+[
+    "github>TotallyNotRobots/renovate-config"
+]
+"""

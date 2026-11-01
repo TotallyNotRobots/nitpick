@@ -5,4 +5,5 @@ include = [
     "gitattributes.toml",
     "gitignore.toml",
     "pre-commit.toml",
+    "styles/renovate/common.toml",
 ]
