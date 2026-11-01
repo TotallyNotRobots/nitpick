@@ -1,0 +1,13 @@
+["pyproject.toml".tool.hatch.envs.default]
+post-install-commands = ["hatch run pre-commit:install"]
+
+["pyproject.toml".tool.hatch.envs.pre-commit]
+post-install-commands = []
+extra-dependencies = [
+    "pre-commit==4.7.0", # renovate: datasource=pypi
+]
+
+["pyproject.toml".tool.hatch.envs.pre-commit.scripts]
+run = ["pre-commit run {args:--all}"]
+install = ["pre-commit install {args:-f}"]
+update = ["pre-commit autoupdate --freeze"]
