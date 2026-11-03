@@ -30,10 +30,11 @@ transform-joins = true
 line-length = 120
 aggressive = true
 
-["pyproject.toml".tool.pytest.ini_options]
-minversion = "8.0"
+["pyproject.toml".tool.pytest]
+minversion = "9.0"
 addopts = ["--doctest-modules"]
 filterwarnings = ["error"]
+asyncio_default_fixture_loop_scope = "function"
 
 ["pyproject.toml".tool.coverage.report]
 exclude_lines = [
