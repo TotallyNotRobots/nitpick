@@ -34,7 +34,6 @@ aggressive = true
 minversion = "9.0"
 addopts = ["--doctest-modules"]
 filterwarnings = ["error"]
-asyncio_default_fixture_loop_scope = "function"
 
 ["pyproject.toml".tool.coverage.report]
 exclude_lines = [
