@@ -16,6 +16,14 @@ hooks = [{ id = "ruff-check", args = ["--fix"], types_or = ["python", "pyi", "py
 ["pyproject.toml".tool.ruff]
 line-length = 80
 
+["pyproject.toml".tool.ruff.lint]
+ignore = [
+    "CPY001", # Handled by check-spdx-header
+    "COM812", # Conflicts with formatter
+    "ISC001", # Conflicts with formatter
+    "EXE002", # pre-commit does it better, works with SMB shares
+]
+
 ["pyproject.toml".tool.ruff.format]
 docstring-code-format = true
 line-ending = "lf"
