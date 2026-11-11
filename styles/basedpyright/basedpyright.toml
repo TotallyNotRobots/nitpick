@@ -11,13 +11,9 @@ recommendations = """
 """
 
 [".vscode/settings.json".contains_json]
-"basedpyright.analysis.baselineMode" = "\"discard\""
+"basedpyright\\.analysis\\.baselineMode" = "\"discard\""
 
 [".devcontainer/devcontainer.json".contains_json]
-customizations = """
-{
-    "vscode": {
-        "extensions": ["detachhead.basedpyright"]
-    }
-}
+customizations.vscode.extensions = """
+["detachhead.basedpyright"]
 """
